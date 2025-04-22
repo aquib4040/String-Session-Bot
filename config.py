@@ -8,4 +8,4 @@ LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
 MONGO_DB_URI = environ.get("MONGO_DB_URI", "")
 PORT = int(environ.get('PORT', 8080))
 AUTH_CHANNELS = environ.get("AUTH_CHANNEL", "")
-AUTH_CHANNELS = [int(channel_id) for channel_id in AUTH_CHANNELS.split(",")]
+AUTH_CHANNELS = [int(channel_id) for channel_id in AUTH_CHANNELS.split()]
